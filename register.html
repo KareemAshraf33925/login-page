@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>login-page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width ,intial-scal=1.0">
+        <meta name="description" content="login-page">
+        <link rel="icon" href="key.png"> 
+        <style>
+            header{
+                width: 100%;
+                height: 300px;
+                background: url(key.png) 50% no-repeat;
+                background-size: 100px;
+            }
+            input{
+               box-sizing: border-box;
+                width: 100%;
+                height: 30px;
+                border: none;
+                margin: 10px 0;
+                padding: 10px;
+                outline: none;
+                border-radius: 3px;
+            }
+            input[name="checkbox"]{
+                width: 20px;
+            }
+            button{
+                box-sizing: border-box;
+                width: 100%;
+                background-color: rgb(76, 64, 247);
+                padding: 10px 20px;
+                border: none;
+                border-radius: 3px;
+                color: #fff;
+                font-size:15px;
+                cursor: pointer;
+            }
+            input:valid{
+                border-bottom: 2px solid rgb(76, 64, 247) ;
+                background: url(check.png) 98% no-repeat  ;
+                background-size: 20px;
+            }
+            input:invalid{
+                border-bottom: 2px solid rgb(76, 64, 247) ;
+                background: url(delete.png) 98% no-repeat  ;
+                background-size: 20px;
+            }
+            label{
+                    padding: 20px 0px ;
+                    font-size:20px;
+                    text-decoration:none;
+                    font-weight: bolder;
+                    color: #000;
+                    display: inline-flex;
+                   
+                    
+              
+               
+            }
+            input[name="gender"]{
+
+                        appearance: none;
+                        outline: none;
+                        border:2px solid #000 ;
+                        border-radius:50%;
+                        width:20px;
+                        height: 20px;
+                        background-image: none;
+            }
+            a{
+                display:block;
+                padding: 10px 0;
+                 text-decoration:none;
+                 font-size: 20px;
+                 font-weight: bolder;
+                 color: #000;
+                 
+             }
+             input[name="gender"]:checked{
+                background-color: blue;
+                
+             }
+          @media(min-width:720px) and (max-width:841px){
+            body{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              
+            }
+            header{
+                border-right:2px solid   rgb(76, 64, 247) ;
+                margin-right: 20px;
+            }
+
+            
+          }
+        </style>
+    </head>
+    </head>
+    <body>
+<header>
+
+</header>
+<form method="get">
+<input type="text" placeholder="first-name" name="text" required>
+<input type="text" placeholder="last-name" name="text" required>
+<input type="email" placeholder="email" name="emai" required>
+<input type="password" placeholder="passward" name="passward" required>
+<input type="password" placeholder="re-passward" name="passward" required>
+
+<input type="radio" name="gender">
+<label>male</label>
+<input type="radio" name="gender">
+<label>female</label>
+<a href="login.html">login</a>
+<button type="submit">submit</button>
+</form>
+    </body>
+</html>

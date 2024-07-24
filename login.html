@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>login-page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width ,intial-scal=1.0">
+        <meta name="description" content="login-page">
+        <link rel="icon" href="key.png"> 
+        <style>
+            header{
+                width: 100%;
+                height: 300px;
+                background: url(key.png) 50% no-repeat;
+                background-size: 100px;
+            }
+            input{
+               box-sizing: border-box;
+                width: 100%;
+                height: 30px;
+                border: none;
+                margin: 10px 0;
+                padding: 15px;
+                outline: none;
+                border-radius: 3px;
+            }
+            
+            button{
+                box-sizing: border-box;
+                width: 100%;
+                background-color: rgb(76, 64, 247);
+                padding: 10px 20px;
+                border: none;
+                border-radius: 3px;
+                color: #fff;
+                font-size:15px;
+                cursor: pointer;
+            }
+            input:valid{
+                border-bottom: 2px solid rgb(76, 64, 247) ;
+                background: url(check.png) 98% no-repeat  ;
+                background-size: 20px;
+            }
+            input:invalid{
+                border-bottom: 2px solid rgb(76, 64, 247) ;
+                background: url(delete.png) 98% no-repeat  ;
+                background-size: 20px;
+            }
+            a{
+                display: block;
+                padding: 10px 0;
+                 text-decoration:none;
+                 font-weight: bolder;
+                 color: #000;
+                 
+             }
+
+          @media(min-width:720px) and (max-width:841px){
+            body{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              
+            }
+            header{
+                border-right:2px solid   rgb(76, 64, 247) ;
+                margin-right: 20px;
+            }
+           
+            
+          }
+        </style>
+    </head>
+    </head>
+    <body>
+<header>
+
+</header>
+<form method="get">
+<input type="email" placeholder="email" name="emai" required>
+<input type="password" placeholder="passward" name="passward" required>
+<a href="register.html">creat-account</a>
+<button type="submit">submit</button></form>
+    </body>
+</html>
